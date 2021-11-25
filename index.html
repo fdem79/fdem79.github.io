@@ -8,17 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
 	<script src=js/calc.js async ></script>
 	<script src=js/decompte.js async ></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Travail',     11],
+          ['Repas',      2],
+          ['Transports',  2],
+          ['Loisirs', 2],
+          ['Sommeil',    7]
+        ]);
+
+        var options = {
+          title: 'Répartition horaire de la journée d\'un étudiant '
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+   
+
+
+
+
+
+
     <title>Mon projet SAé </title>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
-            <h1 class="logo">Mon projet SAé.</h1>
+            <h1 class="logo"><img src="images/iut.png" ></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="features.html">Features</a></li>
+                    <li><a href="features.html">Notre mission</a></li>
                     <li><a href="docs.html">Bibliographie</a></li>
                 </ul>
             </nav>
@@ -30,14 +64,75 @@
         <div class="container grid">
             <div class="showcase-text">
                 <h1>Bienvenue sur le site ... </h1>
-                <p>Vous décrirez ici les étapes de votre projet </p>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+
+ </p>
 				<p id="mach"></p>
 				
                 <a href="features.html" class="btn btn-outline">En savoir plus</a>
             </div>
 
-            <div class="showcase-form card">
-                <h2>Convertisseur simple </h2>
+				<div class="showcase-form card">
+                    <i class=""></i>
+					<h3>Temps restant avant 2022</h3>
+					<p id="demo"></p>
+					
+				</div>	
+		
+    </section>
+
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="stats-heading text-center my-1">
+              Quelques statistiques ... 
+            </h2>
+            <div id="piechart" style="width: 900px; height: 500px;"></div>
+			
+ <!-- Stats 
+            <div class="grid grid-3 text-center my-4">
+                 
+                
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">texte </p>
+                </div>
+				
+				 
+                
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">texte </p>
+                </div>
+				
+				
+                
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">texte </p>
+                </div>
+			              
+					-->
+                    
+			
+                   
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Libre  -->
+    <section class="libre">
+        <div class="container grid">
+		<div class="card">
+		<h2>Convertisseur simple </h2>
+		<p> Grâce à notre outil, ne ratez plus jamais une conversion </p>
                 
                  <!-- <form> -->
                     <!-- <div class="form-control"> -->
@@ -69,51 +164,9 @@
 			<label>Livres</label>
         </div>
 			</form>	 
-				
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <h3 class="stats-heading text-center my-1">
-              Bienvenue sur notre site !
-            </h3>
-				
-
-
-            <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fas fa-server fa-3x"></i>
-					<h3>Temps restant avant 2022</h3>
-					<p id="demo"></p>
-					
-
-					
-					
-                    
-			
-                    <p class="text-secondary">texte</p>
-                </div>
-                <div>
-                    <i class="fas fa-upload fa-3x"></i>
-                    <h3>987 TB</h3>
-                    <p class="text-secondary">texte </p>
-                </div>
-                <div>
-                    <i class="fas fa-project-diagram fa-3x"></i>
-                    <h3>140</h3>
-                    <p class="text-secondary">Projets</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Libre  -->
-    <section class="libre">
-        <div class="container grid">
-            <img src="images/cli.png" alt="">
+		</div>
+		
+            <img src="./images/bath.jpg" alt="Bâtiment H de l'IUT sénart">
             <div class="card">
                 <h3>Carte blanche pour cette div ... </h3>
             </div>
@@ -123,7 +176,7 @@
         </div>
     </section>
 
-    <!-- Cloud -->
+    <!-- Vidéo -->
     <section class="cloud bg-primary my-2 py-2">
         <div class="container grid">
             <div class="text-center">
@@ -131,7 +184,7 @@
                 <p class="lead my-1">Ici vous insérerez une vidéo</p>
                 <a href="features.html" class="btn btn-dark">Read More</a>
             </div>
-            <img src="im/bath.jpg" alt="Bâtiment H de l'IUT sénart">
+            
         </div>
     </section>
 

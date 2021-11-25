@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --primary-color: #047a11;
-  --secondary-color: #1c3fa8;
+  --primary-color: #1b27b7d9;
+  --secondary-color: #7d93d399;
   --dark-color: #002240;
   --light-color: #f4f4f4;
   --success-color: #5cb85c;
@@ -16,11 +16,15 @@
   margin: 0;
 }
 
+.logo img{
+  height:70px;
+}
+
+
 body {
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
- 
 }
 
 ul {
@@ -41,6 +45,10 @@ h2 {
 
 p {
   margin: 10px 0;
+}
+
+#logo {
+  width: 180px;
 }
 
 img {
@@ -162,6 +170,7 @@ pre {
 .stats {
   padding-top: 100px;
   animation: slideInFromBottom 1s ease-in;
+  /* height: 600px; */
 }
 
 .stats-heading {

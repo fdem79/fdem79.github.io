@@ -11,19 +11,19 @@
     <title>Mon projet SAé </title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">Mon projet SAé.</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Bibliographie</a></li>
-                </ul>
-            </nav>
-        </div>
+   <!-- Navbar -->
+   <div class="navbar">
+    <div class="container flex">
+        <h1 class="logo"><img src="images/iut.png" ></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="features.html">Notre mission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+</div>
     
     <!-- Showcase -->
     <section class="showcase">
@@ -34,23 +34,34 @@
 For each output I tried to challenge myself both technically and visually by using some of the more advanced features of three.js. Some styles use InstancedMesh to render a lot of objects on the scene without affecting performance too much, others use custom GLSL shaders. I've also written custom code to programatically define the color palette based on the token hash.</p>
             </div>
 
-				<div class="showcase-form card">
-                   <form> 
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </form>
+			
 				
 				</div>	
 		</div>
     </section>
+
+
+<section class="container grid">
+
+	<div class="showcase-form card">
+        <form> 
+         <div class="form-control">
+             <input type="text" name="name" placeholder="Name" required>
+         </div>
+         <div class="form-control">
+             <input type="text" name="company" placeholder="Company Name" required>
+         </div>
+         <div class="form-control">
+             <input type="email" name="email" placeholder="Email" required>
+         </div>
+         <input type="submit" value="Send" class="btn btn-primary">
+     </form>
+
+
+
+
+</section>
+
 
 
 

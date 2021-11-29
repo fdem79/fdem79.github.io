@@ -230,7 +230,7 @@ pre {
 /* Features */
 .features-head img,
 .docs-head img {
-  width: 200px;
+  width: 100%;
   justify-self: flex-end;
 }
 
